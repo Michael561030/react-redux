@@ -23,7 +23,7 @@ class App extends Component {
         // save location category from address bar
         let currentLocation = this.props.location.pathname.replace('/', '');
         let search = this.props.location.search;
-        const inputSearch = search.slice(search.indexOf('=') + 1, search.length)
+        const addressSearch = search.slice(search.indexOf('=') + 1, search.length);
         const {products, categoriesList} = this.props;
 
         return (
@@ -53,14 +53,14 @@ class App extends Component {
                             resetField={(event) => {
                                 this.props.inputProducts(event)
                             }}
-                            input={inputSearch}
+                            input={addressSearch}
                         />
                         {
                             products &&
                             <ProductsList
                                 products={products}
                                 category={currentLocation}
-                                input={inputSearch}
+                                input={addressSearch}
                             />
                         }
                     </Col>

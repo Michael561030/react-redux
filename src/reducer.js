@@ -57,7 +57,7 @@ export default function reducer(state = initialState, action) {
     try {
         yield put(requestForProducts());
         const products = yield call(() => {
-                return fetch("http://localhost:3000/products.json")
+                return fetch("http://localhost:3001/products.json")
                     .then(res => res.json())
                     .then(
                         (result) => (result.hasOwnProperty('products') && result.products)
