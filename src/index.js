@@ -6,7 +6,7 @@ import {createStore, applyMiddleware} from 'redux';
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';
 import createSagaMiddleware from 'redux-saga';
-import reducer, {watchRequest} from './reducer'
+import reducer, {watchRequest} from './ducks/reducer'
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {
     BrowserRouter as Router,
