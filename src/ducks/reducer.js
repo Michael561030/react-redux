@@ -57,7 +57,7 @@ export function* fetchProductsSaga() {
     try {
         yield put(requestForProducts());
         const products = yield call(() => {
-                return fetch("http://localhost:3001/products.json")
+                return fetch("http://demo1656942.mockable.io/products.json")
                     .then(res => res.json())
                     .then(
                         (result) => (result.hasOwnProperty('products') && result.products)
