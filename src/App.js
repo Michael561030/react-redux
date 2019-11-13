@@ -3,13 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {connect} from 'react-redux';
-import {requestProduct} from './ducks/reducer';
+import {requestProduct} from './ducks/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Input from './components/Input';
 import ProductsList from './components/ProductsList';
 import Categories from "./components/Categories";
 import {style} from './common/style/style.css'
-import * as productReducer from './ducks/reducer'
+import * as productReducer from './ducks/index'
 
 //Creating our component
 class App extends Component {

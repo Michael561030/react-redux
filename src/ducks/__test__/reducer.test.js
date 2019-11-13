@@ -1,10 +1,10 @@
 import {call, put, all, takeLatest} from 'redux-saga/effects';
-import reducer, {requestForProducts, requestProductSuccess} from '../reducer';
-import * as i from '../reducer';
+import reducer, {requestForProducts, requestProductSuccess} from '../index';
+import * as i from '../index';
 
 
 
-import {fetchProductsSaga} from '../reducer';
+import {fetchProductsSaga} from '../index';
 
 const LOAD_PRODUCT_ASYNC = 'LOAD_PRODUCT_ASYNC';
 const LOAD_SUCCESS = 'LOAD_SUCCESS';
