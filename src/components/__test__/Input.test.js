@@ -26,6 +26,3 @@ describe('TEST Search input component ', () => {
     });
 
 });
-
-
-

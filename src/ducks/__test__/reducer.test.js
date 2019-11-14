@@ -1,5 +1,5 @@
-import {call, put, all, takeLatest} from 'redux-saga/effects';
-import reducer, {requestForProducts, requestProductSuccess} from '../index';
+import {put, takeLatest} from 'redux-saga/effects';
+import reducer from '../index';
 import * as i from '../index';
 
 
@@ -124,4 +124,3 @@ describe('Test Saga', () => {
         expect(generator.next().done).toBeTruthy()
     })
 });
-
